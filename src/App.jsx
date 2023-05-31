@@ -1,11 +1,14 @@
-import { createContext, useContext } from 'react';
+import Gallery from './Gallery';
+import SearchForm from './SearchForm';
+import ThemeToggle from './ThemeToggle';
 
 const App = () => {
-  const AppContext = createContext(useContext);
   return (
-    <main>
-      <h1>App</h1>
-    </main>
+    <>
+      <ThemeToggle />
+      <SearchForm />
+      <Gallery />
+    </>
   );
 };
 
